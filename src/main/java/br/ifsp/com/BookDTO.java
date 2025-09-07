@@ -4,7 +4,7 @@ public class BookDTO {
     private String title;
     private String author;
     private String publisher;
-    private Integer stock;
+    private Float price;
 
     public String getTitle() {
         return title;
@@ -18,7 +18,7 @@ public class BookDTO {
         return publisher;
     }
 
-    public Integer getStock() {
-        return stock;
+    public Float getPrice() {
+        return price;
     }
 }

@@ -11,7 +11,7 @@ public class Transformator {
         Class<?> source = input.getClass();
 
         //Busca por uma classe com o nome da source + sufixo DTO
-        Class<?> target = Class.forName(source + "DTO") ;
+        Class<?> target = Class.forName(source.getName() + "DTO") ;
 
         //Localiza o método construtor da classe de destino e cria uma nova instância
         O targetClass = (O) target.getDeclaredConstructor().newInstance();
@@ -33,9 +33,7 @@ public class Transformator {
                     catch (IllegalAccessException e) {
                         e.printStackTrace();
                     }
-
                 }));
-
 
         //Retorna a instância criada da classe de destino
         return targetClass;
