@@ -33,4 +33,14 @@ public class TransformatorTest {
         });
     }
 
+    @Test
+    public void shouldTransformWhenSomeFieldIsNull() throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+        Book bookSimple = new Book("Swimming In The Dark","Tomasz Jedrowski");
+
+        Transformator transformator = new Transformator();
+        BookDTO BookDTOSimple = transformator.transform(bookSimple);
+
+        Assertions.assertEquals(bookSimple.getTitle(), BookDTOSimple.getTitle());
+        Assertions.assertNull(BookDTOSimple.getPublisher());
+    }
 }

@@ -17,6 +17,13 @@ public class Book {
         this.stock = stock;
     }
 
+    public Book ( String title, String author) {
+        this.title = title;
+        this.author = author;
+        this.publisher = publisher;
+        this.price = price;
+    }
+
     public Book() {
         this.id = 0;
         this.title = "";
