@@ -24,7 +24,8 @@ O que foi aprendido até o momento:
 
 ### Baixar o repositório
 **Caso não tenha git instalado na sua máquina:**
-
+Clique em "Download Zip" e descompacte o arquivo
+<img width="920" height="448" alt="image" src="https://github.com/user-attachments/assets/2e0255af-4dbf-4d87-9685-1c54a89ebbfa" />
 
 **Caso tenha o git instalado:**
 * Abra o terminal no seu computador e digite o comando:
@@ -46,6 +47,7 @@ Para testar os testes feitos para o Java Reflections, abra o arquivo ```Transfor
 * Localizado em: test/java/br.ifsp.com.refl;
 * Clique no ícone de "Play" ao lado de cada método, ou use o atalho: o Ctrl + Shift + F10
 * Caso tudo dê certo, você verá algo parecido com isso:
+<img width="758" height="139" alt="image" src="https://github.com/user-attachments/assets/36029fc1-5da6-4e90-8b5e-a670bb3bcc04" />
 
 
 ***Object To Json Test***
@@ -53,3 +55,4 @@ Para testar os testes feitos para o Java Reflections, abra o arquivo ```Transfor
 * Localizado em: test/java/br.ifsp.com.refl;
 * Clique no ícone de "Play" ao lado de cada método, ou use o atalho: o Ctrl + Shift + F10
 * Caso tudo dê certo, você verá algo parecido com isso:
+* <img width="595" height="170" alt="image" src="https://github.com/user-attachments/assets/d64f39ae-3ed2-43dd-a346-f733f25296b9" />
