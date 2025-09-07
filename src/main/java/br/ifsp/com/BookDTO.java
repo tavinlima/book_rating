@@ -5,6 +5,7 @@ public class BookDTO {
     private String author;
     private String publisher;
     private Float price;
+    private RatingDTO rating;
 
     public String getTitle() {
         return title;
@@ -20,5 +21,9 @@ public class BookDTO {
 
     public Float getPrice() {
         return price;
+    }
+
+    public RatingDTO getRating() {
+        return rating;
     }
 }

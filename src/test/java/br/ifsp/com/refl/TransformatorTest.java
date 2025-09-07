@@ -4,13 +4,15 @@ import br.ifsp.com.Book;
 import br.ifsp.com.BookDTO;
 
 import br.ifsp.com.Publisher;
+import br.ifsp.com.Rating;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.InvocationTargetException;
 
 public class TransformatorTest {
-    Book book = new Book(1,"Morro dos Ventos Uivantes","Emily Brontë","Editora Globo", 50.99f,100);
+    Rating rating = new Rating(5.0d, "Gustavo", "Livro bom demais!! Recomendo.");
+    Book book = new Book(1,null,"Emily Brontë",rating,"Editora Globo", 50.99f,100);
     Publisher publisher = new Publisher("Editora Seguinte", "45192875000170");
 
     @Test
@@ -23,6 +25,7 @@ public class TransformatorTest {
         Assertions.assertEquals(book.getAuthor(), bookDTO.getAuthor());
         Assertions.assertEquals(book.getPublisher(), bookDTO.getPublisher());
         Assertions.assertEquals(book.getPrice(), bookDTO.getPrice());
+
     }
 
     @Test

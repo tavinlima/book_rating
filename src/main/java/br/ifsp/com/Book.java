@@ -7,6 +7,7 @@ public class Book {
     private String publisher;
     private Float price;
     private Integer stock;
+    public Rating rating;
 
     public Book( Integer id, String title, String author, String publisher, Float price, Integer stock) {
         this.id = id;
@@ -17,11 +18,19 @@ public class Book {
         this.stock = stock;
     }
 
-    public Book ( String title, String author) {
+    public Book( Integer id, String title, String author, Rating rating, String publisher, Float price, Integer stock) {
+        this.id = id;
         this.title = title;
         this.author = author;
         this.publisher = publisher;
+        this.rating = rating;
         this.price = price;
+        this.stock = stock;
+    }
+
+    public Book ( String title, String author) {
+        this.title = title;
+        this.author = author;
     }
 
     public Book() {
@@ -79,5 +88,13 @@ public class Book {
 
     public void setStock(Integer stock) {
         this.stock = stock;
+    }
+
+    public String getRating() {
+        return publisher;
+    }
+
+    public void setRating(Rating rating) {
+        this.rating = rating;
     }
 }

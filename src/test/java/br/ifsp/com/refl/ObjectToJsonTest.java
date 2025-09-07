@@ -44,6 +44,6 @@ public class ObjectToJsonTest {
         Assertions.assertTrue(node.get("publisher").isNull());
 
             //Se o campo não existir
-        Assertions.assertNull(node.get("rating"));
+        Assertions.assertNull(node.get("movieName"));
     }
 }

@@ -24,6 +24,7 @@ public class ObjectToJson {
                     try {
                         value = field.get(obj);
                     } catch (IllegalAccessException e) {
+                        System.out.println("Erro ao tentar acessar campo privado: " + e.getMessage());
                         e.printStackTrace();
                     }
                     mapper.put(key, value);
@@ -33,7 +34,8 @@ public class ObjectToJson {
         try {
             result = objMapper.writeValueAsString(mapper);
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+           System.out.println("Erro durante o processamento do JSON: " + e.getMessage());
+           e.printStackTrace();
         }
 
         return result;
